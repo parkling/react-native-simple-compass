@@ -75,7 +75,7 @@ public class RNSimpleCompassModule extends ReactContextBaseJavaModule implements
 
           mAzimuth = newAzimuth;
 
-          getReactApplicationContext()
+          this.reactContext
                   .getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
                   .emit("HeadingUpdated", mAzimuth);
       }
