@@ -25,13 +25,13 @@ public class RNSimpleCompassModule extends ReactContextBaseJavaModule implements
   private int mFilter = 1;
   private SensorManager mSensorManager;
   private Sensor mSensor;
-    private Sensor gSensor;
-    private Sensor magSensor;
+  private Sensor gSensor;
+  private Sensor magSensor;
   private float[] orientation = new float[3];
   private float[] rMat = new float[9];
-    private float[] mGravity = new float[3];
-    private float[] mGeomagnetic = new float[3];
-    private float azimuth = 0f;
+  private float[] mGravity = new float[3];
+  private float[] mGeomagnetic = new float[3];
+  private float azimuth = 0f;
 
 
 
@@ -39,7 +39,7 @@ public class RNSimpleCompassModule extends ReactContextBaseJavaModule implements
     super(reactContext);
     this.reactContext = reactContext;
     mApplicationContext = reactContext.getApplicationContext();
-      Log.d("RNSimpleCompassModule", "constructor finished");
+    Log.d("RNSimpleCompassModule", "constructor finished");
   }
 
   @Override
