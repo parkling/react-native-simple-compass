@@ -49,7 +49,7 @@
 
 - (BOOL)locationManagerShouldDisplayHeadingCalibration:(CLLocationManager *)manager
 {
-    NSLog(@"alsways return false");
+    NSLog(@"always return false");
     return false;
 }
 
